@@ -52,35 +52,17 @@ const projects = [
   {
     title: "PosePerfect",
     description: "An AI-powered app that corrects your exercise posture using pose estimation.",
-    images: [
-      <img src={PF1} alt="PosePerfect Image 1" className="h-10 lg:h-12 rounded-full" />,
-      <img src={PF2} alt="PosePerfect Image 2" className="h-10 lg:h-12 rounded-full" />,
-      <img src={PF3} alt="PosePerfect Image 3" className="h-10 lg:h-12 rounded-full" />,
-      <img src={PORTFOLIO} alt="PosePerfect Portfolio" className="h-10 lg:h-12 rounded-full" />
-    ]
+    images: [PF1, PF2, PF3, PORTFOLIO]
   },
   {
     title: "Internship DTR",
     description: "A DTR Management System for EonBotz Technology Interns",
-    images: [
-      <img src={OJT_DTR} alt="Internship DTR Image 1" className="h-10 lg:h-12 rounded-full" />,
-      <img src={OJT2} alt="Internship DTR Image 2" className="h-10 lg:h-12 rounded-full" />,
-      <img src={OJT} alt="Internship DTR Image 3" className="h-10 lg:h-12 rounded-full" />,
-      <img src={OJT3} alt="Internship DTR Image 4" className="h-10 lg:h-12 rounded-full" />
-    ]
+    images: [OJT_DTR, OJT2, OJT, OJT3]
   },
   {
     title: "Graphics Design and Visual Branding",
-    description:
-      "Created fliers, posters, tarpaulins, and various promotional materials for EonBotz Technology. Focused on delivering visually compelling designs aligned with the company's branding for both digital and print platforms.",
-    images: [
-      <img src={GD1} alt="Graphics Design Image 1" className="h-10 lg:h-12 rounded-full" />,
-      <img src={DESIGN} alt="Graphics Design Image 2" className="h-10 lg:h-12 rounded-full" />,
-      <img src={GD3} alt="Graphics Design Image 3" className="h-10 lg:h-12 rounded-full" />,
-      <img src={DESIGN2} alt="Graphics Design Image 4" className="h-10 lg:h-12 rounded-full" />,
-      <img src={GD2} alt="Graphics Design Image 5" className="h-10 lg:h-12 rounded-full" />,
-      <img src={DESIGN3} alt="Graphics Design Image 6" className="h-10 lg:h-12 rounded-full" />
-    ]
+    description: "Created fliers, posters, tarpaulins, and various promotional materials...",
+    images: [GD1, DESIGN, GD3, DESIGN2, GD2, DESIGN3]
   }
 ];
 
@@ -320,14 +302,14 @@ const projects = [
                 </div>
                 <p className="mb-6 text-lg">{project.description}</p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  {(project.images || project.image || []).map((img, i) => (
-                    <img
-                      key={i}
-                      src={img}
-                      alt={`${project.title} ${i + 1}`}
-                      className="object-cover w-full max-h-[300px] shadow-lg rounded-xl"
-                    />
-                  ))}
+              {(project.images || []).map((img, i) => (
+            <img
+              key={i}
+              src={img}
+              alt={`${project.title} ${i + 1}`}
+              className="object-cover w-full max-h-[300px] shadow-lg rounded-xl"
+            />
+          ))}
                 </div>
               </motion.div>
             )}
