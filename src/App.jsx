@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 // eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from "framer-motion";
+import logo from './images/logo.png';
 
 const App = () => {
  const [activeBox, setActiveBox] = useState(null);
@@ -69,23 +70,23 @@ const handleBoxClick = (index) => {
     >
 {/* Navbar */}
 <nav className="w-full flex justify-between items-center px-6 lg:px-12 py-4 lg:py-6 bg-gradient-to-r from-[#0fa4af] to-[#024950] sticky top-0 z-50 shadow-md">
-  <div className="flex items-center">
-  
-    <img src="/src/images/logo.png" alt="JIP Logo" className="h-10 lg:h-12 rounded-full" />
-  </div>
-  <ul className="hidden md:flex gap-6 lg:gap-8 text-[#f1f1f1] text-base lg:text-lg font-semibold font-[Poppins]">
-    {["Home", "About", "Project", "Certificate", "Contact"].map((item) => (
-      <li
-        key={item}
-        className="relative px-4 py-2 rounded hover:bg-white/10 transition-all duration-300 cursor-pointer group"
-      >
-        <a href={`#${item.toLowerCase()}`} className="group-hover:underline group-hover:decoration-white group-hover:decoration-2 transition-all duration-300">
-          {item}
-        </a>
-      </li>
-    ))}
-  </ul>
-</nav>
+      <div className="flex items-center">
+        {/* Use the imported logo here */}
+        <img src={logo} alt="JIP Logo" className="h-10 lg:h-12 rounded-full" />
+      </div>
+      <ul className="hidden md:flex gap-6 lg:gap-8 text-[#f1f1f1] text-base lg:text-lg font-semibold font-[Poppins]">
+        {["Home", "About", "Project", "Certificate", "Contact"].map((item) => (
+          <li
+            key={item}
+            className="relative px-4 py-2 rounded hover:bg-white/10 transition-all duration-300 cursor-pointer group"
+          >
+            <a href={`#${item.toLowerCase()}`} className="group-hover:underline group-hover:decoration-white group-hover:decoration-2 transition-all duration-300">
+              {item}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
 
 
       {/* Home Section */}
