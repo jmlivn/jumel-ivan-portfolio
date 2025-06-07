@@ -4,16 +4,15 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from './images/logo.png';
 import meImage from './images/me.jpg';
+
 import PF1 from './images/pf1.jpg';
 import PF2 from './images/pf2.jpg';
 import PF3 from './images/pf3.jpg';
 import PORTFOLIO from './images/portfolio.png';
-
 import OJT_DTR from './images/ojt_dtr.jpg';
 import OJT2 from './images/ojt2.jpg';
 import OJT from './images/ojt.jpg';
 import OJT3 from './images/ojt3.jpg';
-
 import GD1 from './images/gd1.jpg';
 import DESIGN from './images/design.jpg';
 import GD3 from './images/gd3.jpg';
@@ -54,20 +53,20 @@ const projects = [
     title: "PosePerfect",
     description: "An AI-powered app that corrects your exercise posture using pose estimation.",
     images: [
-      <img src={PF1} alt="PosePerfect Image 1" className="h-10 lg:h-12 rounded-full" />,
-      <img src={PF2} alt="PosePerfect Image 2" className="h-10 lg:h-12 rounded-full" />,
-      <img src={PF3} alt="PosePerfect Image 3" className="h-10 lg:h-12 rounded-full" />,
-      <img src={PORTFOLIO} alt="PosePerfect Portfolio" className="h-10 lg:h-12 rounded-full" />
+      <img src="/images/pf1.jpg" alt="PosePerfect Image 1" className="h-10 lg:h-12 rounded-full" />,
+      <img src="/images/pf2.jpg" alt="PosePerfect Image 2" className="h-10 lg:h-12 rounded-full" />,
+      <img src="/images/pf3.jpg" alt="PosePerfect Image 3" className="h-10 lg:h-12 rounded-full" />,
+      <img src="/images/portfolio.png" alt="PosePerfect Portfolio" className="h-10 lg:h-12 rounded-full" />
     ]
   },
   {
     title: "Internship DTR",
     description: "A DTR Management System for EonBotz Technology Interns",
     images: [
-      <img src={OJT_DTR} alt="Internship DTR Image 1" className="h-10 lg:h-12 rounded-full" />,
-      <img src={OJT2} alt="Internship DTR Image 2" className="h-10 lg:h-12 rounded-full" />,
-      <img src={OJT} alt="Internship DTR Image 3" className="h-10 lg:h-12 rounded-full" />,
-      <img src={OJT3} alt="Internship DTR Image 4" className="h-10 lg:h-12 rounded-full" />
+      <img src="/images/ojt_dtr.jpg" alt="Internship DTR Image 1" className="h-10 lg:h-12 rounded-full" />,
+      <img src="/images/ojt2.jpg" alt="Internship DTR Image 2" className="h-10 lg:h-12 rounded-full" />,
+      <img src="/images/ojt.jpg" alt="Internship DTR Image 3" className="h-10 lg:h-12 rounded-full" />,
+      <img src="/images/ojt3.jpg" alt="Internship DTR Image 4" className="h-10 lg:h-12 rounded-full" />
     ]
   },
   {
@@ -75,12 +74,12 @@ const projects = [
     description:
       "Created fliers, posters, tarpaulins, and various promotional materials for EonBotz Technology. Focused on delivering visually compelling designs aligned with the company's branding for both digital and print platforms.",
     images: [
-      <img src={GD1} alt="Graphics Design Image 1" className="h-10 lg:h-12 rounded-full" />,
-      <img src={DESIGN} alt="Graphics Design Image 2" className="h-10 lg:h-12 rounded-full" />,
-      <img src={GD3} alt="Graphics Design Image 3" className="h-10 lg:h-12 rounded-full" />,
-      <img src={DESIGN2} alt="Graphics Design Image 4" className="h-10 lg:h-12 rounded-full" />,
-      <img src={GD2} alt="Graphics Design Image 5" className="h-10 lg:h-12 rounded-full" />,
-      <img src={DESIGN3} alt="Graphics Design Image 6" className="h-10 lg:h-12 rounded-full" />
+      <img src="/images/gd1.jpg" alt="Graphics Design Image 1" className="h-10 lg:h-12 rounded-full" />,
+      <img src="/images/design.jpg" alt="Graphics Design Image 2" className="h-10 lg:h-12 rounded-full" />,
+      <img src="/images/gd3.jpg" alt="Graphics Design Image 3" className="h-10 lg:h-12 rounded-full" />,
+      <img src="/images/design2.png" alt="Graphics Design Image 4" className="h-10 lg:h-12 rounded-full" />,
+      <img src="/images/gd2.jpg" alt="Graphics Design Image 5" className="h-10 lg:h-12 rounded-full" />,
+      <img src="/images/design3.jpg" alt="Graphics Design Image 6" className="h-10 lg:h-12 rounded-full" />
     ]
   }
 ];
