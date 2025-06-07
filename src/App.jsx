@@ -3,6 +3,31 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 // eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from "framer-motion";
 import logo from './images/logo.png';
+import meImage from './images/me.jpg';
+import PF1 from './images/pf1.jpg';
+import PF2 from './images/pf2.jpg';
+import PF3 from './images/pf3.jpg';
+import PORTFOLIO from './images/portfolio.png';
+
+import OJT_DTR from './images/ojt_dtr.jpg';
+import OJT2 from './images/ojt2.jpg';
+import OJT from './images/ojt.jpg';
+import OJT3 from './images/ojt3.jpg';
+
+import GD1 from './images/gd1.jpg';
+import DESIGN from './images/design.jpg';
+import GD3 from './images/gd3.jpg';
+import DESIGN2 from './images/design2.png';
+import GD2 from './images/gd2.jpg';
+import DESIGN3 from './images/design3.jpg';
+
+import NFT_DOMAIN from './images/nft-domain-certificate.jpeg';
+import HTML_CERT from './images/html-certificate.jpeg';
+import OJT_CERT from './images/ojt_certificate.jpg';
+import CAPSTONE1 from './images/capstone_writing1.png';
+import CAPSTONE2 from './images/capstone_writing2.jpg';
+import MCITS2024 from './images/MCITS-2024-FINAL.png';
+import MCITS2023 from './images/MCITS-2023-FINAL.png';
 
 const App = () => {
  const [activeBox, setActiveBox] = useState(null);
@@ -24,44 +49,41 @@ const closeModal = () => {
 const handleBoxClick = (index) => {
   setActiveBox(index === activeBox ? null : index);
 };
- const projects = [
+const projects = [
   {
     title: "PosePerfect",
     description: "An AI-powered app that corrects your exercise posture using pose estimation.",
     images: [
-      "/src/images/pf1.jpg",
-      "/src/images/pf2.jpg",
-      "/src/images/pf3.jpg",
-      "/src/images/portfolio.png"
+      <img src={PF1} alt="PosePerfect Image 1" className="h-10 lg:h-12 rounded-full" />,
+      <img src={PF2} alt="PosePerfect Image 2" className="h-10 lg:h-12 rounded-full" />,
+      <img src={PF3} alt="PosePerfect Image 3" className="h-10 lg:h-12 rounded-full" />,
+      <img src={PORTFOLIO} alt="PosePerfect Portfolio" className="h-10 lg:h-12 rounded-full" />
     ]
   },
   {
     title: "Internship DTR",
-    description:
-      "A DTR Management System for EonBotz Technology Interns",
-    image: [ 
-     "/src/images/ojt_dtr.jpg",
-     "/src/images/ojt2.jpg",
-     "/src/images/ojt.jpg",
-     "/src/images/ojt3.jpg",
+    description: "A DTR Management System for EonBotz Technology Interns",
+    images: [
+      <img src={OJT_DTR} alt="Internship DTR Image 1" className="h-10 lg:h-12 rounded-full" />,
+      <img src={OJT2} alt="Internship DTR Image 2" className="h-10 lg:h-12 rounded-full" />,
+      <img src={OJT} alt="Internship DTR Image 3" className="h-10 lg:h-12 rounded-full" />,
+      <img src={OJT3} alt="Internship DTR Image 4" className="h-10 lg:h-12 rounded-full" />
     ]
   },
-    {
-      title: "Graphics Design and Visual Branding",
-      description:
-        "Created fliers, posters, tarpaulins, and various promotional materials for EonBotz Technology. Focused on delivering visually compelling designs aligned with the company's branding for both digital and print platforms.",
-      images: [
-      "/src/images/gd1.jpg",
-      "/src/images/design.jpg",
-      "/src/images/gd3.jpg",
-      "/src/images/design2.png",
-      "/src/images/gd2.jpg",
-      "/src/images/design3.jpg",
-
-      ], 
-    }
-
-  ];
+  {
+    title: "Graphics Design and Visual Branding",
+    description:
+      "Created fliers, posters, tarpaulins, and various promotional materials for EonBotz Technology. Focused on delivering visually compelling designs aligned with the company's branding for both digital and print platforms.",
+    images: [
+      <img src={GD1} alt="Graphics Design Image 1" className="h-10 lg:h-12 rounded-full" />,
+      <img src={DESIGN} alt="Graphics Design Image 2" className="h-10 lg:h-12 rounded-full" />,
+      <img src={GD3} alt="Graphics Design Image 3" className="h-10 lg:h-12 rounded-full" />,
+      <img src={DESIGN2} alt="Graphics Design Image 4" className="h-10 lg:h-12 rounded-full" />,
+      <img src={GD2} alt="Graphics Design Image 5" className="h-10 lg:h-12 rounded-full" />,
+      <img src={DESIGN3} alt="Graphics Design Image 6" className="h-10 lg:h-12 rounded-full" />
+    ]
+  }
+];
 
   return (
     <div
@@ -120,8 +142,8 @@ const handleBoxClick = (index) => {
         </div>
 
         <div className="w-full lg:w-1/2 flex flex-col items-center animate-fadeInUp delay-150">
-          <img
-            src="/src/images/me.jpg"
+         <img
+            src={meImage} // Use the imported image
             alt="Profile"
             className="rounded-2xl shadow-xl w-full max-w-sm lg:max-w-lg h-auto object-cover"
           />
@@ -337,43 +359,43 @@ const handleBoxClick = (index) => {
           title: "NFT Domains: The Future of Web3 Identity",
           issuer: "BitDegree",
           date: "June 2025",
-          imageSrc: "/src/images/nft-domain-certificate.jpeg", 
+          imageSrc: NFT_DOMAIN,  // Use imported image variable here
         },
         {
           title: "Solid Foundation of HTML, CSS and JavaScript",
           issuer: "BitDegree",
           date: "June 2025",
-          imageSrc: "/src/images/html-certificate.jpeg", 
+          imageSrc: HTML_CERT,  // Use imported image variable here
         },
         {
           title: "OJT Certificate",
           issuer: "EonBotz Technology",
           date: "May 2025",
-          imageSrc: "/src/images/ojt_certificate.jpg", 
+          imageSrc: OJT_CERT,  // Use imported image variable here
         },
         {
           title: "Capstone Writing 2",
           issuer: "Holy Cross of Davao College",
           date: "August 2024",
-          imageSrc: "/src/images/capstone_writing2.jpg", 
+          imageSrc: CAPSTONE2,  // Use imported image variable here
         },
-         {
+        {
           title: "Capstone Writing 1",
           issuer: "Holy Cross of Davao College",
           date: "June 2024",
-          imageSrc: "/src/images/capstone_writing1.png", 
+          imageSrc: CAPSTONE1,  // Use imported image variable here
         },
         {
           title: "MCITS 2024",
           issuer: "PSITE",
           date: "May 2024",
-          imageSrc: "/src/images/MCITS-2024-FINAL.png", 
+          imageSrc: MCITS2024,  // Use imported image variable here
         },
         {
           title: "MCITS 2023",
           issuer: "PSITE",
           date: "May 2023",
-          imageSrc: "/src/images/MCITS-2023-FINAL.png", 
+          imageSrc: MCITS2023,  // Use imported image variable here
         }
       ].map((cert, idx) => (
         <div key={idx} className="mb-16 relative flex flex-col lg:flex-row items-center lg:items-start">
@@ -392,7 +414,7 @@ const handleBoxClick = (index) => {
             onClick={() => openModal(cert.imageSrc)}
           >
             <img 
-              src={cert.imageSrc} 
+              src={cert.imageSrc}  // Use the imported image variable here
               alt={`Certificate for ${cert.title}`} 
               className="w-full h-auto object-cover rounded-lg"
             />
@@ -418,6 +440,7 @@ const handleBoxClick = (index) => {
     </div>
   )}
 </section>
+
 
 <section id="contact" className="w-full py-16 bg-gradient-to-r from-[#f0f4f7] to-[#e2ebf0] px-6 lg:px-20">
   <div className="max-w-[1600px] mx-auto text-left">
