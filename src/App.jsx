@@ -74,7 +74,7 @@ const projects = [
 {/* Navbar */}
 <nav className="w-full flex justify-between items-center px-6 lg:px-12 py-4 lg:py-6 bg-gradient-to-r from-[#0fa4af] to-[#024950] sticky top-0 z-50 shadow-md">
       <div className="flex items-center">
-        {/* Use the imported logo here */}
+        {/* Logo*/}
         <img src={logo} alt="JIP Logo" className="h-10 lg:h-12 rounded-full" />
       </div>
       <ul className="hidden md:flex gap-6 lg:gap-8 text-[#f1f1f1] text-base lg:text-lg font-semibold font-[Poppins]">
@@ -102,10 +102,10 @@ const projects = [
             <h2 className="text-6xl sm:text-7xl lg:text-8xl font-extrabold mb-6 leading-tight text-white font-[Poppins]">
               Hi, I'm <span className="text-[#003135]">Jumel Ivan</span>
             </h2>
-            <h3 className="text-3xl sm:text-4xl lg:text-5xl text-white mb-8 font-semibold font-[Poppins]">
+            <h3 className="text-3xl sm:text-4xl lg:text-5xl text-[#003135] mb-8 font-semibold font-[Poppins]">
               Front-End Web Developer and IT Technical Support
             </h3>
-            <p className="text-white/80 mb-10 text-xl sm:text-2xl lg:text-3xl font-[Poppins] text-justify max-w-xl lg:max-w-2xl lg:pr-4">
+            <p className="text-[#003135]/80 mb-10 text-xl sm:text-2xl lg:text-3xl font-[Poppins] text-justify max-w-xl lg:max-w-2xl lg:pr-4">
               I design and develop modern, responsive websites with a focus on
               performance, aesthetics, and user experience. I also build custom
               computers and provide expert troubleshooting services to ensure
@@ -124,7 +124,7 @@ const projects = [
 
         <div className="w-full lg:w-1/2 flex flex-col items-center animate-fadeInUp delay-150">
          <img
-            src={meImage} // Use the imported image
+            src={meImage} 
             alt="Profile"
             className="rounded-2xl shadow-xl w-full max-w-sm lg:max-w-lg h-auto object-cover"
           />
@@ -158,7 +158,7 @@ const projects = [
 
 <section id="about" className="min-h-screen bg-gradient-to-b from-[#024950] to-[#0FA4AF] px-6 lg:px-20 py-28 text-white font-[Poppins]">
   <div className="max-w-[1600px] mx-auto">
-    {/* Modern Left-Aligned Header */}
+    {/* Header */}
     <div className="mb-20">
       <h2 className="text-7xl font-extrabold leading-tight text-white drop-shadow-lg">
         Get to <span className="text-[#AFDDE5]">Know Me</span>
@@ -243,7 +243,7 @@ const projects = [
 {/* Projects */}
 <section id="project" className="min-h-screen bg-gradient-to-b from-white to-[#e6f8f9] px-6 lg:px-20 py-28 text-[#003135] font-[Poppins]">
   <div className="max-w-[1600px] mx-auto">
-    {/* Modern Left-Aligned Header */}
+    {/* Header */}
     <div className="mb-20">
       <h2 className="text-7xl font-extrabold leading-tight">
         Explore <span className="text-[#0FA4AF]">My Projects</span>
@@ -323,7 +323,7 @@ const projects = [
 
 <section id="certificate" className="min-h-screen bg-gradient-to-b from-[#024950] to-[#0FA4AF] px-6 lg:px-20 py-28 text-white font-[Poppins]">
   <div className="max-w-[1600px] mx-auto">
-    {/* Modern Left-Aligned Header */}
+    {/* Header */}
     <div className="mb-20">
       <h2 className="text-7xl font-extrabold leading-tight">
         My <span className="text-[#AFDDE5]">Certificates</span>
@@ -340,43 +340,43 @@ const projects = [
           title: "NFT Domains: The Future of Web3 Identity",
           issuer: "BitDegree",
           date: "June 2025",
-          imageSrc: NFT_DOMAIN,  // Use imported image variable here
+          imageSrc: NFT_DOMAIN,  
         },
         {
           title: "Solid Foundation of HTML, CSS and JavaScript",
           issuer: "BitDegree",
           date: "June 2025",
-          imageSrc: HTML_CERT,  // Use imported image variable here
+          imageSrc: HTML_CERT,  
         },
         {
           title: "OJT Certificate",
           issuer: "EonBotz Technology",
           date: "May 2025",
-          imageSrc: OJT_CERT,  // Use imported image variable here
+          imageSrc: OJT_CERT,  
         },
         {
           title: "Capstone Writing 2",
           issuer: "Holy Cross of Davao College",
           date: "August 2024",
-          imageSrc: CAPSTONE2,  // Use imported image variable here
+          imageSrc: CAPSTONE2,  
         },
         {
           title: "Capstone Writing 1",
           issuer: "Holy Cross of Davao College",
           date: "June 2024",
-          imageSrc: CAPSTONE1,  // Use imported image variable here
+          imageSrc: CAPSTONE1,  
         },
         {
           title: "MCITS 2024",
           issuer: "PSITE",
           date: "May 2024",
-          imageSrc: MCITS2024,  // Use imported image variable here
+          imageSrc: MCITS2024,  
         },
         {
           title: "MCITS 2023",
           issuer: "PSITE",
           date: "May 2023",
-          imageSrc: MCITS2023,  // Use imported image variable here
+          imageSrc: MCITS2023,  
         }
       ].map((cert, idx) => (
         <div key={idx} className="mb-16 relative flex flex-col lg:flex-row items-center lg:items-start">
@@ -395,7 +395,7 @@ const projects = [
             onClick={() => openModal(cert.imageSrc)}
           >
             <img 
-              src={cert.imageSrc}  // Use the imported image variable here
+              src={cert.imageSrc}  
               alt={`Certificate for ${cert.title}`} 
               className="w-full h-auto object-cover rounded-lg"
             />
@@ -431,7 +431,7 @@ const projects = [
     </h2>
 
     <div className="grid lg:grid-cols-2 gap-12">
-      {/* Left Column: Contact Details */}
+      {/* Left Column Contact*/}
       <div className="space-y-8">
         {/* Email */}
         <div className="flex items-center space-x-4 text-lg text-[#003135]">
@@ -458,7 +458,7 @@ const projects = [
         </div>
       </div>
 
-      {/* Right Column: Sticky */}
+      {/* Right Column Sticky */}
       <div className="sticky top-16 flex flex-col space-y-4">
         <h3 className="text-2xl font-semibold text-[#003135]">Let's Connect!</h3>
         <p className="text-lg text-[#003135]">Feel free to reach out to me for any inquiries or collaborations!</p>
