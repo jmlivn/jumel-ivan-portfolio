@@ -78,7 +78,7 @@ const projects = [
         <img src={logo} alt="JIP Logo" className="h-10 lg:h-12 rounded-full" />
       </div>
       <ul className="hidden md:flex gap-6 lg:gap-8 text-[#f1f1f1] text-base lg:text-lg font-semibold font-[Poppins]">
-        {["Home", "About", "Project", "Certificate", "Contact"].map((item) => (
+        {["Home", "About", "Project", "Certificate", "CV", "Contact"].map((item) => (
           <li
             key={item}
             className="relative px-4 py-2 rounded hover:bg-white/10 transition-all duration-300 cursor-pointer group"
@@ -422,6 +422,91 @@ const projects = [
   )}
 </section>
 
+<section id="cv" className="min-h-screen bg-gradient-to-b from-[#024950] to-[#0FA4AF] px-6 lg:px-20 py-28 text-white font-[Poppins]">
+  <div className="max-w-[1600px] mx-auto">
+    {/* Header */}
+    <div className="mb-20">
+      <h2 className="text-7xl font-extrabold leading-tight">
+        My <span className="text-[#AFDDE5]">Curriculum Vitae</span>
+      </h2>
+      <p className="mt-4 text-lg text-white/80 max-w-xl">
+        Below are the details of my professional journey, skills, education, and certifications that reflect my growth as a developer and IT professional.
+      </p>
+    </div>
+
+    {/* Personal Information */}
+    <div className="text-center text-white mb-16">
+      <h3 className="text-4xl font-bold">Jumel Ivan Pelino</h3>
+      <p className="text-lg">Bachelor of Science in Information Technology</p>
+    </div>
+
+    {/* CV Content */}
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+      {/* Professional Experience */}
+      <div className="bg-white text-black rounded-3xl p-10 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500 cursor-pointer relative overflow-hidden group">
+        <div className="absolute inset-0 bg-[#AFDDE5]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        <h3 className="text-3xl font-bold mb-4 text-center group-hover:text-[#024950] transition-colors">
+          Professional Experience
+        </h3>
+        <ul className="space-y-4 text-lg list-disc pl-6 pr-2 text-justify group-hover:text-[#024950] transition-colors">
+          <li><strong>Associate Theft Investigator</strong> – Panoptyc (2025–Present): Investigating theft and ensuring quality performance.</li>
+          <li><strong>Full Stack Intern</strong> – EonBotz Technology (Feb–May 2025): Built responsive web apps and gained practical hands-on experience with modern development tools.</li>
+          <li><strong>Custom PC Builder</strong> – Self-Employed: Crafted high-performance systems for creators and gamers. Provided troubleshooting and repair services.</li>
+        </ul>
+      </div>
+
+      {/* Education */}
+      <div className="bg-white text-black rounded-3xl p-10 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500 cursor-pointer relative overflow-hidden group">
+        <div className="absolute inset-0 bg-[#AFDDE5]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        <h3 className="text-3xl font-bold mb-4 text-center group-hover:text-[#024950] transition-colors">
+          Education
+        </h3>
+        <ul className="space-y-4 text-lg list-disc pl-6 pr-2 text-justify group-hover:text-[#024950] transition-colors">
+          <li><strong>College</strong> – Holy Cross of Davao College (2021–Present): Pursuing BSIT degree.</li>
+          <li><strong>Senior High School</strong> – Rizal Memorial Colleges (2019–2021): Specializing in STEM.</li>
+          <li><strong>High School</strong> – Holy Cross of Agdao (2015–2019): Focused on general academic subjects.</li>
+          <li><strong>Elementary School</strong> – Vicente Hizon Sr. Elementary School (2009–2015): Completed elementary education.</li>
+        </ul>
+      </div>
+    </div>
+
+    {/* Skills */}
+    <div className="bg-[#AFDDE5] text-black rounded-3xl p-10 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500 cursor-pointer relative overflow-hidden group mt-12">
+      <div className="absolute inset-0 bg-[#024950]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      <h3 className="text-3xl font-bold mb-6 text-center group-hover:text-white transition-colors">
+        Technical Skills
+      </h3>
+      <div className="flex flex-wrap justify-center gap-6">
+        {[ 
+          "HTML5", "CSS3", "JavaScript", "React.js", 
+          "Tailwind CSS", "Git & GitHub", "Node.js", "PHP", 
+          "Laravel", "CodeIgniter", "C#", "Figma"
+        ].map((item, idx) => (
+          <div key={idx} className="bg-[#024950] text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-[#0FA4AF] transition-all duration-300 cursor-pointer">
+            {item}
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* Certifications */}
+    <div className="bg-[#AFDDE5] text-black rounded-3xl p-10 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500 cursor-pointer relative overflow-hidden group mt-12">
+      <div className="absolute inset-0 bg-[#024950]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      <h3 className="text-3xl font-bold mb-6 text-center group-hover:text-white transition-colors">
+        Certifications
+      </h3>
+      <ul className="space-y-4 text-lg list-disc pl-6 pr-2 text-justify group-hover:text-white transition-colors">
+        <li><strong>NFT Domains: The Future of Web3 Identity</strong> – BitDegree (June 2025)</li>
+        <li><strong>Solid Foundation of HTML, CSS, and JavaScript</strong> – BitDegree (June 2025)</li>
+        <li><strong>OJT Certificate</strong> – EonBotz Technology (May 2025)</li>
+        <li><strong>MCITS 2024</strong> – PSITE (May 2024)</li>
+        <li><strong>Capstone Writing 1 & 2</strong> – Holy Cross of Davao College (2024–2025)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
 
 <section id="contact" className="w-full py-16 bg-gradient-to-r from-[#f0f4f7] to-[#e2ebf0] px-6 lg:px-20">
   <div className="max-w-[1600px] mx-auto text-left">
@@ -469,6 +554,7 @@ const projects = [
     </div>
   </div>
 </section>
+
 
 
 
